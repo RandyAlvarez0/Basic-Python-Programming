@@ -67,7 +67,7 @@ class Assignment2:
 
     # Task 6 (Socket)
     @staticmethod
-    def connectTCP(host, port):
+    def connectTcp(host, port):
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((host, port))
@@ -97,7 +97,7 @@ print(ret)
 ret = Assignment2.checkGoodString("foobar0more")
 print(ret)
 
-retval = Assignment2.connectTCP("www.google.com", 80)
+retval = Assignment2.connectTcp("www.google.com", 80)
 if retval:
     print("Connection established correctly")
 else:
