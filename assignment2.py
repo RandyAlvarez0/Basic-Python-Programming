@@ -16,8 +16,7 @@ class Assignment2:
     # Task 3 (List)
     def listAnniversaries(self):
         anniList = []
-        val = input("Current Year: ")
-        diff = int(int(val) - self.year)
+        diff = int(2022 - self.year)
         rep = int(diff / 10)
         for x in range(rep):
             anniList.append((x + 1) * 10)
