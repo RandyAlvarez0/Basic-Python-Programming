@@ -11,13 +11,13 @@ class Assignment2:
 
     # Task 2 (Age)
     def tellAge(self, currentYear):
-        self.currentYear = currentYear
         return print("Your age is " + str(currentYear - self.year))
 
     # Task 3 (List)
     def listAnniversaries(self):
         anniList = []
-        diff = int(self.currentYear - self.year)
+        val = input("Current Year: ")
+        diff = int(int(val) - self.year)
         rep = int(diff / 10)
         for x in range(rep):
             anniList.append((x + 1) * 10)
@@ -78,12 +78,13 @@ class Assignment2:
 
 
 a = Assignment2(2000)
-a.tellAge(2030)
+a.tellAge(2022)
+
+a = Assignment2(2000)
 ret = a.listAnniversaries()
 print(ret)
 
 a = Assignment2(1991)
-a.tellAge(2030)
 ret = a.listAnniversaries()
 print(ret)
 
